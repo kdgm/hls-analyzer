@@ -1,0 +1,13 @@
+#
+# Docker Compose file to run hls-analyzer in a container
+#
+# Build:
+#     docker compose build
+# Run:
+#     docker compose run --rm hls-analyzer "$@"
+#
+services:
+  hls-analyzer:
+    build: .
+    volumes:
+      - .:/app
